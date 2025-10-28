@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+    <title>QuizApp</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo_img">
+          <svg
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_6_330)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                fill="currentColor"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_330">
+                <rect width="48" height="48" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h1 class="logo_text">QuizApp</h1>
+      </div>
+    </header>
+    <main>
+      <section class="hero_section">
+        <div class="hero">
+          <h2>Test Your Knowledge with Our Engaging Quizzes</h2>
+          <p class="hero_text">
+            Explore a wide range of topics and challenge yourself with our
+            interactive quizzes. Whether you're looking to learn something new
+            or just have fun, our app has something for everyone.
+          </p>
+          <button class="hero_btn">Start Quiz</button>
+        </div>
+      </section>
+      <section class="categories_section">
+        <form class="categories">
+          <h2>Select The Category</h2>
+          <div class="categorie_options">
+            <label class="categorie_option" for="Knowledge">
+              <input type="radio" id="Knowledge" name="categorie" />
+              <span>General Knowledge</span>
+            </label>
+            <label class="categorie_option" for="Science">
+              <input type="radio" id="Science" name="categorie" />
+              Science & Technology
+            </label>
+            <label class="categorie_option" for="Web">
+              <input type="radio" id="Web" name="categorie" />
+              Web Development
+            </label>
+            <label class="categorie_option" for="History">
+              <input type="radio" id="History" name="categorie" />
+              History
+            </label>
+            <label class="categorie_option" for="Sports">
+              <input type="radio" id="Sports" name="categorie" />
+              Sports
+            </label>
+          </div>
+          <button class="Start_btn">Start</button>
+        </form>
+      </section>
+      <section class="test_section">
+        <div class="test">
+          <div class="test_uppersection">
+            <div class="test_uppersection_header">
+              <h2 class="test_uppersection_header_text">
+                Question
+                <span class="test_uppersection_header_text_number">1</span> of
+                10
+              </h2>
+              <div class="progress">
+                <div class="progress_bar"></div>
+              </div>
+            </div>
+            <div class="test_uppersection_timeContainer">
+              <h2>Time</h2>
+              <p class="time_value_text">60</p>
+            </div>
+          </div>
+          <div class="test_belowsection">
+            <div class="test_belowsection_QuestionSection">
+              <div class="Question_img_container">
+                <img
+                  class="Question_img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX7EqHq2O_hDjMGZN9srS0tazr_FKC8tbU1lN7lO70OzJJo4EOcxD5tjjYyHaAexgd9-yPKhYy7NEDCLqKaBW6XEfZQ15q7QRBAQCTjNLTyBHzxDnIstEVp5nwaPnikKYNJ2E3RrlQJCzE9RC9N5Vpi3SJPBqk8girGNLUsHTAJat5QmjYTuSFPisDxfbGgDytGzmFlSPKWQxmmTrfFaBVCUAOudWeG2hzy0mMPaToVabGbQJc-6zt4VC2GMXmuTv8NFcyTHnrFg0"
+                />
+              </div>
+              <h2 class="Question_text">What is the capital of France?</h2>
+              <p>Choose the correct answer from the options below.</p>
+            </div>
+            <form class="answers">
+              <div class="answer_options">
+                <label class="answer_option" for="Question1">
+                  <input
+                    class="answer_input"
+                    type="radio"
+                    id="Question1"
+                    name="answer"
+                  />
+                  <span class="option_text"> General Knowledge </span>
+                </label>
+                <label class="answer_option" for="Question2">
+                  <input
+                    class="answer_input"
+                    type="radio"
+                    id="Question2"
+                    name="answer"
+                  />
+                  <span class="option_text">Science & Technology</span>
+                </label>
+                <label class="answer_option" for="Question3">
+                  <input
+                    class="answer_input"
+                    type="radio"
+                    id="Question3"
+                    name="answer"
+                  />
+                  <span class="option_text">Web Development</span>
+                </label>
+                <label class="answer_option" for="Question4">
+                  <input
+                    class="answer_input"
+                    type="radio"
+                    id="Question4"
+                    name="answer"
+                  />
+                  <span class="option_text"> History </span>
+                </label>
+              </div>
+            </form>
+            <div class="next_btn_container">
+              <button class="next_btn">Next Question</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="result_section">
+        <div class="result">
+          <h2 class="result_text">Quiz Results</h2>
+          <div class="score_card_container">
+            <div class="score_card">
+              <h3 class="score_card_title">Final Score</h3>
+              <p class="score_card_value final_score_text">8/10</p>
+            </div>
+            <div class="score_card">
+              <h3 class="score_card_title">Accuracy</h3>
+              <p class="score_card_value Accuracy_text">80%</p>
+            </div>
+          </div>
+          <div class="score_summary">
+            <h2 class="Summary_text">Summary</h2>
+            <div class="score_summary_lists">
+              <div class="score_summary_list_wrapper">
+                <div class="score_summary_list">
+                  <p class="score_summary_list_header">Correct Answers</p>
+                  <p class="score_summary_list_value correct_score_text">8</p>
+                </div>
+              </div>
+              <div class="score_summary_list_wrapper">
+                <div class="score_summary_list">
+                  <p class="score_summary_list_header">Incorrect Answers</p>
+                  <p class="score_summary_list_value incorrect_score_text">2</p>
+                </div>
+              </div>
+            </div>
+            <button class="home_btn">Back to home</button>
+          </div>
+        </div>
+      </section>
+      <section class="Modal_section">
+        <div class="modal">
+          <h2>Do You Want To Resume Previous Quiz ?</h2>
+          <div class="modal_btn_container">
+            <button class="quit_btn">Quit</button>
+            <button class="resume_btn">Resume</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
